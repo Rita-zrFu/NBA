@@ -1,6 +1,6 @@
 # Machine Learning for NBA Injury Risk Prediction
 
-This repository is being developed from an NBA course project in separately approved stages. **Stage 2 is complete: event/identity audits and a restricted chronological prediction design.** Feature engineering and new model results have not yet been developed.
+This repository is being developed from an NBA course project in separately approved stages. **Stage 3 is complete: 36 strictly historical predictors, leakage tests, and descriptive EDA.** No new models have been trained. Read [the Stage 3 report](docs/stage3_report.md) and [feature dictionary](docs/feature_dictionary.md).
 
 The proposed benchmark predicts a documented injury-related inactive-list episode within 14 days of a player-date snapshot, using a delayed historical cutoff. It has **9,804 labelable observations across 691 players**, with **13.58%** positive outcomes. These are cohort counts, not model performance. The data cannot establish a clean, continuously observed NBA at-risk roster or unbiased clinical injury probabilities. See [the Stage 2 design and limitations](docs/prediction_design.md) before continuing.
 
@@ -18,20 +18,24 @@ Read [the source review](docs/original_project_review.md) for the actual data, m
 - `docs/prediction_design.md`, `docs/stage2_design_config.json`, and `results/tables/stage2_*`: the Stage 2 design, frozen rules, and audits.
 - `data/processed/stage2/`: generated observations, labels, episodes, and split files, retained locally and ignored by Git.
 - `scripts/verify_migration.py`: verifies copied source bytes without training or modifying data.
+- `src/nba_injury/features/` and `scripts/build_stage3_features.py`: workload/performance/episode-history features and unfitted sklearn preprocessing factories.
+- `results/figures/stage3/` and `results/tables/stage3_*`: six EDA figures, dictionaries, missingness/redundancy audits, and summaries.
+- `data/processed/stage3/`: X/y matrices and separate row manifests/date provenance, local and ignored by Git.
 
-## Reproduce Stage 2
+## Reproduce completed stages
 
 From the repository root, with Python 3:
 
 ```bash
 python3 scripts/verify_migration.py
 python3 scripts/build_stage2_design.py
+python3 scripts/build_stage3_features.py
 python3 -m unittest discover -s tests -v
 git status --short
 ```
 
-The verifier uses the Python standard library; Stage 2 also requires pandas and NumPy. Its final code/tests ran with existing Python 3.13.7, pandas 2.3.2, and NumPy 2.3.3. `requirements.txt` lists the original scientific imports plus JupyterLab and remains unpinned. No packages or project environment have been installed yet.
+The verifier uses the Python standard library. Select a Python environment with the dependencies in `requirements.txt`; shell `python3` can resolve to different installations. Stage 3 ran with the existing Anaconda Python 3.13.5 and scikit-learn 1.6.1. See the stage reports for exact tested versions. Dependencies remain unpinned, and no packages or project environments have been installed here. Stage 3's preprocessors are unfitted; future CV must fit them within each training fold.
 
 ## Next approved stage
 
-Stage 3 requires explicit approval of the task to continue with, including the restricted population and outcome-ascertainment limitations in the Stage 2 report. It would then build strictly historical features. Modeling waits for the later approved stages. Résumé claims about model comparisons, tuning, rolling features, and injury-history predictors remain goals until supported by implemented code and verified results.
+Stage 4 requires explicit approval before baseline/model comparisons begin. Workload, recent performance, and documented episode-history feature engineering are implemented. Résumé claims about model comparisons, cross-validation, tuning, and prediction performance remain goals until supported by code and verified results. The restricted population and ascertainment limitations in the Stage 2 design continue to apply.

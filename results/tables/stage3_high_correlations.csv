@@ -1,0 +1,7 @@
+feature_a,feature_b,spearman
+minutes_sum_7d,minutes_sum_14d,0.900095732032881
+minutes_mean_7d,minutes_mean_14d,0.9556893191402542
+minutes_mean_7d,minutes_mean_30d,0.909118352743936
+minutes_mean_14d,minutes_mean_30d,0.9560484899821976
+pts_mean_30d,fga_mean_30d,0.9678377848333133
+prior_episodes_90d,prior_episodes_180d,0.9372832020517071

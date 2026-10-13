@@ -1,0 +1,164 @@
+{
+  "stage": 3,
+  "primary_horizon_days": 14,
+  "feature_count": 36,
+  "candidate_feature_count": 37,
+  "feature_groups": {
+    "injury_history": 7,
+    "performance": 15,
+    "workload": 14
+  },
+  "dimensions": [
+    {
+      "split": "train",
+      "rows": 4957,
+      "predictors": 36,
+      "positives": 593
+    },
+    {
+      "split": "validation",
+      "rows": 2143,
+      "predictors": 36,
+      "positives": 293
+    },
+    {
+      "split": "test",
+      "rows": 2704,
+      "predictors": 36,
+      "positives": 445
+    }
+  ],
+  "excluded_candidates": [
+    "days_since_available_appearance"
+  ],
+  "missingness": [
+    {
+      "split": "train",
+      "feature": "fg_pct_30d",
+      "missing_count": 14,
+      "missing_fraction": 0.002824288884405891
+    },
+    {
+      "split": "train",
+      "feature": "fg3_pct_30d",
+      "missing_count": 352,
+      "missing_fraction": 0.07101069195077668
+    },
+    {
+      "split": "train",
+      "feature": "ft_pct_30d",
+      "missing_count": 185,
+      "missing_fraction": 0.037320960258220695
+    },
+    {
+      "split": "train",
+      "feature": "days_since_prior_episode",
+      "missing_count": 1159,
+      "missing_fraction": 0.2338107726447448
+    },
+    {
+      "split": "validation",
+      "feature": "fg_pct_30d",
+      "missing_count": 4,
+      "missing_fraction": 0.0018665422305179655
+    },
+    {
+      "split": "validation",
+      "feature": "fg3_pct_30d",
+      "missing_count": 132,
+      "missing_fraction": 0.06159589360709286
+    },
+    {
+      "split": "validation",
+      "feature": "ft_pct_30d",
+      "missing_count": 120,
+      "missing_fraction": 0.05599626691553897
+    },
+    {
+      "split": "validation",
+      "feature": "days_since_prior_episode",
+      "missing_count": 499,
+      "missing_fraction": 0.2328511432571162
+    },
+    {
+      "split": "test",
+      "feature": "fg_pct_30d",
+      "missing_count": 5,
+      "missing_fraction": 0.0018491124260355029
+    },
+    {
+      "split": "test",
+      "feature": "fg3_pct_30d",
+      "missing_count": 174,
+      "missing_fraction": 0.0643491124260355
+    },
+    {
+      "split": "test",
+      "feature": "ft_pct_30d",
+      "missing_count": 125,
+      "missing_fraction": 0.046227810650887574
+    },
+    {
+      "split": "test",
+      "feature": "days_since_prior_episode",
+      "missing_count": 520,
+      "missing_fraction": 0.19230769230769232
+    }
+  ],
+  "sanity_checks": {
+    "nested_workload_counts": true,
+    "nested_minutes": true,
+    "b2b_pairs_bounded": true,
+    "shooting_proportions_valid": true,
+    "injury_windows_nested": true,
+    "no_infinite_values": true,
+    "prior_indicator_consistent": true,
+    "positive_minutes_plausible": true,
+    "block_max_source_date_strictly_before_cutoff": true,
+    "injury_all_max_source_date_strictly_before_cutoff": true,
+    "workload_7d_max_source_date_strictly_before_cutoff": true,
+    "workload_14d_max_source_date_strictly_before_cutoff": true,
+    "workload_30d_max_source_date_strictly_before_cutoff": true,
+    "performance_max_source_date_strictly_before_cutoff": true,
+    "injury_30d_max_source_date_strictly_before_cutoff": true,
+    "injury_90d_max_source_date_strictly_before_cutoff": true,
+    "injury_180d_max_source_date_strictly_before_cutoff": true,
+    "injury_365d_max_source_date_strictly_before_cutoff": true
+  },
+  "high_correlation_pairs": 6,
+  "figures": [
+    "results/figures/stage3/01_prevalence.png",
+    "results/figures/stage3/02_train_workload.png",
+    "results/figures/stage3/03_train_injury_history.png",
+    "results/figures/stage3/04_train_performance.png",
+    "results/figures/stage3/05_missingness.png",
+    "results/figures/stage3/06_train_correlations.png"
+  ],
+  "frozen_stage2_files_unchanged": true,
+  "stage2_input_hashes": {
+    "docs/stage2_design_config.json": "1541d2999cebf2eaf8954b7e87cd139c088e74eaacf8d8c840c433be314f15f6",
+    "src/nba_injury/data/design.py": "6aafbbe6082cd3f2d69bcf739f553159cde28507c89de84d0e6905c4382f1cd8",
+    "scripts/build_stage2_design.py": "4ef63dbf3096380b5f40f775fd249ef557772aa9dc86ce87718a1a11d3254efd",
+    "results/tables/stage2_design_summary.json": "dec43e5f510863389e2f2c251420041dace512073872aaf467c648a981b78542",
+    "data/processed/stage2/validation_7d.csv": "8ae0de706061d99a214516d50bfef3df6e1a30f917d87cb3b52f57f55d156bc6",
+    "data/processed/stage2/observations_14d.csv": "62e1d9c978b936e9aedcc57648006067a2b0841f62c6f80378d5810a8d82f465",
+    "data/processed/stage2/resolved_status_events.csv": "e8e00ca4e87947338d96dcc2c4412071b1fc9eecb60b1c4fed94a2c7c6756a44",
+    "data/processed/stage2/test_14d.csv": "ae7443730e500636428f5e387f223e1d2a6658976c4e2fb656190eb513ad8ebe",
+    "data/processed/stage2/train_14d.csv": "94400dafdace8e0f34a94a44ddf034da09144abc1374143d41a3c8be1b0acd87",
+    "data/processed/stage2/candidate_observations.csv": "d176c03d6f7ad0fd8da0abfd350a514926d09a968ce3a87da4012684e491f7c8",
+    "data/processed/stage2/train_7d.csv": "2bb346667dfe172f3237bd911a65a82a2eb19b2e2d9399ef7dfb2db14ca30e19",
+    "data/processed/stage2/observations_7d.csv": "ee785c7bd8c1c55cdcd5326c08fda19535ee5238e6fde23798b743b60e0dc558",
+    "data/processed/stage2/validation_14d.csv": "39c98c143acab8fb1f2a31d4ec53e249da71fed2cb12665f9f5720ba63b6e97d",
+    "data/processed/stage2/test_7d.csv": "8414060b1d570951dabaf89eb88f32a06376c297efd478e0146f3357a1d410f1",
+    "data/processed/stage2/event_episodes.csv": "3dbb360c19ac591631b975d18010eaad0e90b70336575458c05053448129651c"
+  },
+  "models_fitted": false,
+  "real_data_preprocessors_fitted": false,
+  "feature_selection_used_test_outcomes": false,
+  "environment": {
+    "python": "3.13.5",
+    "pandas": "2.2.3",
+    "numpy": "2.1.3",
+    "matplotlib": "3.10.0"
+  }
+}
