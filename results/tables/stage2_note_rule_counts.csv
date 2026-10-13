@@ -1,0 +1,10 @@
+action,reason,rows
+activation,return,11532
+placement,ambiguous_reason,4442
+placement,continuation_or_recovery,357
+placement,illness_or_nonmusculoskeletal,763
+placement,injury_related,6485
+placement,other_noninjury,53
+placement,protocol,551
+placement,rest,201
+uncertain_status,no_explicit_placement_action,25

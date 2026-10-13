@@ -1,0 +1,17 @@
+{
+  "source_start": "2009-01-01",
+  "first_candidate_phase_start": "2018-10-16",
+  "last_candidate_phase_start": "2021-10-19",
+  "horizons_days": [7, 14],
+  "candidate_primary_horizon_days": 14,
+  "snapshot_spacing_days": 14,
+  "index_offset_from_anchor_days": 2,
+  "feature_availability_lag_days": 1,
+  "minimum_prior_appearances_in_phase": 10,
+  "minimum_phase_history_days": 30,
+  "negative_followup_marker_grace_days": 7,
+  "train_validation_boundary": "2020-12-22",
+  "validation_test_boundary": "2021-10-19",
+  "test_partial_latest_boundary": "2022-10-18",
+  "status": "conditional_recorded_event_design_for_review"
+}

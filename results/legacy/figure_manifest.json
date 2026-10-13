@@ -1,0 +1,79 @@
+[
+  {
+    "path": "results/legacy/figures/01_season_feature_distributions.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 4,
+    "output": 1,
+    "sha256": "1be280eb8dab37146ee3f11d7c537cc4da31f6810417c5b5bc55e003e2fccc98"
+  },
+  {
+    "path": "results/legacy/figures/02_injury_records_by_year.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 5,
+    "output": 0,
+    "sha256": "dd8289d56e172f3f2bd06e9c321d2db61ac9c34707f561d74e892f7325163c09"
+  },
+  {
+    "path": "results/legacy/figures/03_season_feature_correlations.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 6,
+    "output": 0,
+    "sha256": "9a90fa87ed33244555e939489e5ae4b169d75745be0c3ea27d1d995300c43407"
+  },
+  {
+    "path": "results/legacy/figures/04_injury_records_by_decade.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 7,
+    "output": 0,
+    "sha256": "5a8d069eec690c519f21d96ef7901a748fdc84d8a76ef7b7195eba513d8d1a9e"
+  },
+  {
+    "path": "results/legacy/figures/05_injury_types_by_position.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 8,
+    "output": 0,
+    "sha256": "89bb67f4f42f8bd3d55712f15c76c3e08efd172e38fbe92b042a0fd0ae2bf0f3"
+  },
+  {
+    "path": "results/legacy/figures/06_team_mean_injury_records.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 9,
+    "output": 1,
+    "sha256": "f440d3aecd975afe56f3f38b26be04fa4ba83b1ba02e78eee74a0fff6ea67968"
+  },
+  {
+    "path": "results/legacy/figures/07_blazers_injury_records.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 9,
+    "output": 2,
+    "sha256": "9ed2c1321f221c8a4fc0a7619f3d3db2f29629f32266c883b049627c98f24728"
+  },
+  {
+    "path": "results/legacy/figures/08_76ers_injury_records.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 9,
+    "output": 3,
+    "sha256": "85aa8bee185153d224d0d0d02fb097a55ceac7bf8edca4af3de8543dbf21b236"
+  },
+  {
+    "path": "results/legacy/figures/09_preinjury_performance_changes.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 10,
+    "output": 1,
+    "sha256": "5d9d51f6bcf68e1c6b82095626fa1468ba58c0bf6c79eca238e14d4cc4380606"
+  },
+  {
+    "path": "results/legacy/figures/10_logistic_regression_coefficients.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 11,
+    "output": 1,
+    "sha256": "9c0abfead9397d980e2ca83671f30689536eab8de21f70b37493ed44332335de"
+  },
+  {
+    "path": "results/legacy/figures/11_logistic_regression_roc.png",
+    "source_notebook": "notebooks/legacy/nba_course_final.ipynb",
+    "cell": 11,
+    "output": 2,
+    "sha256": "257be28a978e4a912ae50179b7e3b5c62c78fcb753605fed69153edba48a770f"
+  }
+]

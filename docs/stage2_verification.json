@@ -1,0 +1,40 @@
+{
+  "stage": 2,
+  "date": "2026-10-13",
+  "original_course_files_checked": 55,
+  "original_course_file_contents_unchanged": true,
+  "migrated_source_files_verified": 9,
+  "historical_figures_verified": 11,
+  "unit_tests_passed": 8,
+  "integrity_checks": {
+    "unique_observation_ids": true,
+    "prior_date_anchors_only": true,
+    "one_day_availability_buffer": true,
+    "minimum_spacing_14_days": true,
+    "horizons_within_schedule_phase": true,
+    "split_forward_windows_do_not_overlap": true,
+    "training_labels_available_before_next_period": true,
+    "negatives_have_recorded_followup_witnesses": true,
+    "nested_horizons_consistent": true,
+    "models_trained": false,
+    "full_features_engineered": false
+  },
+  "execution_environment": {
+    "python": "3.13.7",
+    "pandas": "2.3.2",
+    "numpy": "2.3.3"
+  },
+  "packages_installed": false,
+  "models_trained": false,
+  "full_feature_pipeline_implemented": false,
+  "git_staged": false,
+  "commits_created": false,
+  "remote_actions_performed": false,
+  "output_hashes": {
+    "docs/stage2_design_config.json": "1541d2999cebf2eaf8954b7e87cd139c088e74eaacf8d8c840c433be314f15f6",
+    "data/processed/stage2/candidate_observations.csv": "d176c03d6f7ad0fd8da0abfd350a514926d09a968ce3a87da4012684e491f7c8",
+    "data/processed/stage2/observations_7d.csv": "ee785c7bd8c1c55cdcd5326c08fda19535ee5238e6fde23798b743b60e0dc558",
+    "data/processed/stage2/observations_14d.csv": "62e1d9c978b936e9aedcc57648006067a2b0841f62c6f80378d5810a8d82f465",
+    "results/tables/stage2_design_summary.json": "dec43e5f510863389e2f2c251420041dace512073872aaf467c648a981b78542"
+  }
+}

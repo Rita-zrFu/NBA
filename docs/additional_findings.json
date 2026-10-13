@@ -1,0 +1,113 @@
+{
+  "original_label_audit": {
+    "rows": 12711,
+    "positive": 6978,
+    "positive_fraction": 0.5489733301864527,
+    "unique_player_years": 10103,
+    "rows_in_repeated_player_years": 3868,
+    "original_features_missing_rows": 0
+  },
+  "box_Season_equals_calendar_year": true,
+  "duplicate_raw_rows_without_export_indices": {
+    "injury": 2,
+    "stats": 0,
+    "box": 0
+  },
+  "modern_box_missing": {
+    "Season": 0,
+    "Game_ID": 0,
+    "PLAYER_NAME": 0,
+    "Team": 0,
+    "GAME_DATE": 0,
+    "MATCHUP": 0,
+    "WL": 0,
+    "MIN": 0,
+    "FGM": 0,
+    "FGA": 0,
+    "FG_PCT": 0,
+    "FG3M": 0,
+    "FG3A": 0,
+    "FG3_PCT": 0,
+    "FTM": 0,
+    "FTA": 0,
+    "FT_PCT": 0,
+    "OREB": 0,
+    "DREB": 0,
+    "REB": 81,
+    "AST": 0,
+    "STL": 0,
+    "BLK": 0,
+    "TOV": 0,
+    "PF": 0,
+    "PTS": 0,
+    "PLUS_MINUS": 0,
+    "VIDEO_AVAILABLE": 0
+  },
+  "modern_box_rows": 523070,
+  "modern_zero_minute_rows": 2223,
+  "injury_alias_rows": 1061,
+  "injury_unique_relinquished_names": 2725,
+  "all_injury_dates_monotonic": true,
+  "season_stats_modern_summary": {
+    "Age": {
+      "count": 12711.0,
+      "mean": 26.566359845802847,
+      "std": 4.223047321052764,
+      "min": 18.0,
+      "25%": 23.0,
+      "50%": 26.0,
+      "75%": 29.0,
+      "max": 44.0
+    },
+    "G": {
+      "count": 12711.0,
+      "mean": 45.57847533632287,
+      "std": 26.106095147371025,
+      "min": 1.0,
+      "25%": 22.0,
+      "50%": 49.0,
+      "75%": 70.0,
+      "max": 85.0
+    },
+    "GS": {
+      "count": 12711.0,
+      "mean": 21.4604673117772,
+      "std": 26.96702226637853,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 7.0,
+      "75%": 38.0,
+      "max": 83.0
+    },
+    "MP": {
+      "count": 12711.0,
+      "mean": 1053.2012430178586,
+      "std": 865.8530016996818,
+      "min": 0.0,
+      "25%": 266.0,
+      "50%": 867.0,
+      "75%": 1725.0,
+      "max": 3485.0
+    },
+    "PTS": {
+      "count": 12711.0,
+      "mean": 439.80851231217054,
+      "std": 446.11736379039604,
+      "min": 0.0,
+      "25%": 81.0,
+      "50%": 296.0,
+      "75%": 671.0,
+      "max": 2832.0
+    },
+    "FGA": {
+      "count": 12711.0,
+      "mean": 361.42970655337894,
+      "std": 351.1741517954937,
+      "min": 0.0,
+      "25%": 72.0,
+      "50%": 253.0,
+      "75%": 557.0,
+      "max": 2173.0
+    }
+  }
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "cell": 1,
+    "output": 0,
+    "text": "Injury columns: ['Date', 'Team', 'Acquired', 'Relinquished', 'Notes']\nSeason stats columns: ['Season', 'Player', 'Pos', 'Age', 'Tm', 'G', 'GS', 'MP', 'FG', 'FGA', 'FG%', '3P', '3PA', '3P%', '2P', '2PA', '2P%', 'eFG%', 'FT', 'FTA', 'FT%', 'ORB', 'DRB', 'TRB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'PTS']\nBox score columns: ['Season', 'Game_ID', 'PLAYER_NAME', 'Team', 'GAME_DATE', 'MATCHUP', 'WL', 'MIN', 'FGM', 'FGA', 'FG_PCT', 'FG3M', 'FG3A', 'FG3_PCT', 'FTM', 'FTA', 'FT_PCT', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'PTS', 'PLUS_MINUS', 'VIDEO_AVAILABLE']\n"
+  },
+  {
+    "cell": 3,
+    "output": 0,
+    "text": "Total injury rows with classified type: 12038\n"
+  },
+  {
+    "cell": 4,
+    "output": 0,
+    "text": "做直方图的特征列： ['Age', 'G', 'GS', 'MP', 'PTS', 'FGA', 'TRB', 'AST', 'STL', 'BLK', 'TOV', 'PF']\n"
+  },
+  {
+    "cell": 9,
+    "output": 0,
+    "text": "示例几行 team-season 伤病：\n    Team  year  inj_count\n0  76ers  2015          4\n1  76ers  2016          9\n2  76ers  2017         16\n3  76ers  2018         14\n4  76ers  2019         36\n按平均每赛季伤病排序（前20）：\n         Team  inj_count\n5     Celtics     32.250\n28   Warriors     26.000\n16  Mavericks     24.875\n22    Raptors     24.250\n7   Grizzlies     24.250\n8       Hawks     24.000\n2       Bucks     23.875\n13     Knicks     22.125\n19     Pacers     21.875\n24      Spurs     21.750\n11       Jazz     21.625\n0       76ers     20.875\n14     Lakers     20.750\n9        Heat     20.375\n18    Nuggets     20.375\n21    Pistons     20.000\n4   Cavaliers     19.875\n17       Nets     19.500\n3       Bulls     19.000\n23    Rockets     18.750\n"
+  },
+  {
+    "cell": 10,
+    "output": 0,
+    "text": "Number of injuries with enough games: 319\n平均变化：\ndelta_MIN      -1.459707\ndelta_FG_PCT   -0.013818\ndelta_PTS      -0.869537\ndtype: float64\n"
+  },
+  {
+    "cell": 11,
+    "output": 0,
+    "text": "样本总行数： 12711\n受伤 vs 未受伤标签分布：\ny_injured\n1.0    6978\n0.0    5733\nName: count, dtype: int64\n实际可用的特征： ['Age', 'MP', 'G', 'GS', 'PTS', 'FGA', 'TRB', 'STL', 'BLK', 'PF', 'TOV']\n用于建模的样本数： 12711\n=== Classification report ===\n              precision    recall  f1-score   support\n\n         0.0      0.519     0.138     0.218      1720\n         1.0      0.558     0.895     0.688      2094\n\n    accuracy                          0.553      3814\n   macro avg      0.538     0.516     0.453      3814\nweighted avg      0.540     0.553     0.476      3814\n\nAUC: 0.5362580795628706\n"
+  }
+]

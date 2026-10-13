@@ -1,0 +1,14 @@
+{
+  "stage": 1,
+  "date": "2026-10-13",
+  "copied_source_files": 9,
+  "copied_bytes": 174431359,
+  "copied_hashes_match": true,
+  "original_course_files_checked": 55,
+  "original_course_file_contents_unchanged": true,
+  "original_files_added": [],
+  "original_files_removed": [],
+  "extracted_historical_figures": 11,
+  "models_executed": false,
+  "note": "All original file contents were compared to hashes captured before migration. No originals were edited or deleted."
+}

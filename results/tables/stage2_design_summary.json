@@ -1,0 +1,262 @@
+{
+  "config": {
+    "source_start": "2009-01-01",
+    "first_candidate_phase_start": "2018-10-16",
+    "last_candidate_phase_start": "2021-10-19",
+    "horizons_days": [
+      7,
+      14
+    ],
+    "candidate_primary_horizon_days": 14,
+    "snapshot_spacing_days": 14,
+    "index_offset_from_anchor_days": 2,
+    "feature_availability_lag_days": 1,
+    "minimum_prior_appearances_in_phase": 10,
+    "minimum_phase_history_days": 30,
+    "negative_followup_marker_grace_days": 7,
+    "train_validation_boundary": "2020-12-22",
+    "validation_test_boundary": "2021-10-19",
+    "test_partial_latest_boundary": "2022-10-18",
+    "status": "conditional_recorded_event_design_for_review"
+  },
+  "exact_duplicate_log_rows_removed": 2,
+  "identity_audit_period": [
+    "2009-01-02",
+    "2023-04-16"
+  ],
+  "identity_coverage": [
+    {
+      "direction": "Acquired",
+      "match_status": "homonym_excluded",
+      "rows": 12
+    },
+    {
+      "direction": "Acquired",
+      "match_status": "matched",
+      "rows": 11503
+    },
+    {
+      "direction": "Acquired",
+      "match_status": "unmatched",
+      "rows": 21
+    },
+    {
+      "direction": "Relinquished",
+      "match_status": "homonym_excluded",
+      "rows": 17
+    },
+    {
+      "direction": "Relinquished",
+      "match_status": "matched",
+      "rows": 12820
+    },
+    {
+      "direction": "Relinquished",
+      "match_status": "missing",
+      "rows": 1
+    },
+    {
+      "direction": "Relinquished",
+      "match_status": "unmatched",
+      "rows": 35
+    }
+  ],
+  "homonym_names_excluded": [
+    "Chris Johnson",
+    "Chris Wright",
+    "Mike James",
+    "Tony Mitchell"
+  ],
+  "homonym_box_rows": 439,
+  "reviewed_aliases": {
+    "djaugustine": {
+      "canonical": "D.J. Augustin",
+      "reason": "Log spelling differs by a final e; team/date histories checked"
+    },
+    "roydevynmarble": {
+      "canonical": "Devyn Marble",
+      "reason": "Log explicitly includes Devyn; Magic/date histories checked"
+    },
+    "kenyonmartinsr": {
+      "canonical": "Kenyon Martin",
+      "reason": "Explicit Sr identifies the older player, distinct from Kenyon Martin Jr."
+    }
+  },
+  "unresolved_outgoing_dates": [
+    "2009-01-02",
+    "2009-01-13",
+    "2009-01-25",
+    "2009-04-18",
+    "2009-10-29",
+    "2010-03-16",
+    "2010-03-31",
+    "2010-04-13",
+    "2010-04-17",
+    "2010-04-18",
+    "2010-10-26",
+    "2010-10-27",
+    "2010-12-18",
+    "2011-03-25",
+    "2011-04-10",
+    "2011-04-11",
+    "2014-10-28",
+    "2014-11-21",
+    "2014-11-28",
+    "2017-10-18",
+    "2017-10-23",
+    "2018-12-27",
+    "2020-12-27",
+    "2021-05-07",
+    "2021-10-30",
+    "2021-11-03",
+    "2021-12-28",
+    "2022-12-03",
+    "2022-12-04",
+    "2023-01-06",
+    "2023-02-27"
+  ],
+  "notes_rule_counts": [
+    {
+      "action": "activation",
+      "reason": "return",
+      "rows": 11532
+    },
+    {
+      "action": "placement",
+      "reason": "ambiguous_reason",
+      "rows": 4442
+    },
+    {
+      "action": "placement",
+      "reason": "continuation_or_recovery",
+      "rows": 357
+    },
+    {
+      "action": "placement",
+      "reason": "illness_or_nonmusculoskeletal",
+      "rows": 763
+    },
+    {
+      "action": "placement",
+      "reason": "injury_related",
+      "rows": 6485
+    },
+    {
+      "action": "placement",
+      "reason": "other_noninjury",
+      "rows": 53
+    },
+    {
+      "action": "placement",
+      "reason": "protocol",
+      "rows": 551
+    },
+    {
+      "action": "placement",
+      "reason": "rest",
+      "rows": 201
+    },
+    {
+      "action": "uncertain_status",
+      "reason": "no_explicit_placement_action",
+      "rows": 25
+    }
+  ],
+  "candidate_appearance_anchors": 97235,
+  "historical_eligibility_exclusions": {
+    "insufficient_prior_appearances": 20192,
+    "insufficient_phase_history_days": 4104,
+    "spacing_less_than_14_days": 50948,
+    "unresolved_league_event_before_index": 879,
+    "maximum_horizon_crosses_phase_end": 8822,
+    "outgoing_or_uncertain_status_before_index": 779
+  },
+  "selected_snapshots": 11511,
+  "horizons": [
+    {
+      "horizon_days": 7,
+      "observations": 10637,
+      "positive_outcomes": 750,
+      "negative_outcomes": 9887,
+      "prevalence": 0.07050860204945003,
+      "unique_players": 707,
+      "first_index_date": "2018-11-16",
+      "last_index_date": "2022-03-28",
+      "observations_per_player": {
+        "min": 1,
+        "median": 14.0,
+        "mean": 15.045261669024045,
+        "p90": 29.0,
+        "max": 34
+      },
+      "excluded_or_censored": {
+        "no_documented_target_with_observed_followup": 9887,
+        "observed_injury_related_episode": 750,
+        "no_nearby_forward_observation": 508,
+        "ambiguous_or_unresolved_forward_event": 366
+      }
+    },
+    {
+      "horizon_days": 14,
+      "observations": 9804,
+      "positive_outcomes": 1331,
+      "negative_outcomes": 8473,
+      "prevalence": 0.13576091391268869,
+      "unique_players": 691,
+      "first_index_date": "2018-11-16",
+      "last_index_date": "2022-03-28",
+      "observations_per_player": {
+        "min": 1,
+        "median": 13.0,
+        "mean": 14.188133140376266,
+        "p90": 27.0,
+        "max": 31
+      },
+      "excluded_or_censored": {
+        "no_documented_target_with_observed_followup": 8473,
+        "observed_injury_related_episode": 1331,
+        "ambiguous_or_unresolved_forward_event": 1138,
+        "no_nearby_forward_observation": 569
+      }
+    }
+  ],
+  "overlaps": {
+    "7": {
+      "train_validation": 361,
+      "train_test": 318,
+      "validation_test": 377,
+      "all_three": 305,
+      "test_players_seen_in_train": 318,
+      "test_players_not_seen_in_train": 152
+    },
+    "14": {
+      "train_validation": 359,
+      "train_test": 314,
+      "validation_test": 369,
+      "all_three": 300,
+      "test_players_seen_in_train": 314,
+      "test_players_not_seen_in_train": 148
+    }
+  },
+  "integrity": {
+    "unique_observation_ids": true,
+    "prior_date_anchors_only": true,
+    "one_day_availability_buffer": true,
+    "minimum_spacing_14_days": true,
+    "horizons_within_schedule_phase": true,
+    "split_forward_windows_do_not_overlap": true,
+    "training_labels_available_before_next_period": true,
+    "negatives_have_recorded_followup_witnesses": true,
+    "nested_horizons_consistent": true,
+    "models_trained": false,
+    "full_features_engineered": false
+  },
+  "common_labelable_cohort": {
+    "observations": 9517,
+    "unique_players": 686,
+    "positive_7d": 701,
+    "prevalence_7d": 0.07365766523063991,
+    "positive_14d": 1331,
+    "prevalence_14d": 0.1398549963223705
+  }
+}

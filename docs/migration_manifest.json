@@ -1,0 +1,70 @@
+{
+  "stage": 1,
+  "date": "2026-10-13",
+  "source_context": "courses/585",
+  "copies": [
+    {
+      "source_relative": "final proj/NBA Player Injury Stats(1951 - 2023).csv",
+      "destination_relative": "data/raw/nba_injury_logs.csv",
+      "bytes": 2541560,
+      "sha256": "967ebaf701738b33f1a99629dcb8aacc413ef1967d7ee6bbe9c6b85a7b023fe7",
+      "purpose": "Primary injury/availability event log"
+    },
+    {
+      "source_relative": "final proj/NBA Player Stats(1950 - 2022).csv",
+      "destination_relative": "data/raw/nba_player_season_stats.csv",
+      "bytes": 4679427,
+      "sha256": "691f437264beaac13dc978990525965739315cdfd41d81f93cd3af39edf573e1",
+      "purpose": "Primary player/team/season totals and characteristics"
+    },
+    {
+      "source_relative": "final proj/NBA Player Box Score Stats(1950 - 2022).csv",
+      "destination_relative": "data/raw/nba_player_box_scores.csv",
+      "bytes": 158401938,
+      "sha256": "e9c9997a4c706cef8a97a133dfc859172e7c7e8a30a2e226b30b6946803179f4",
+      "purpose": "Primary dated player/game records"
+    },
+    {
+      "source_relative": "nba player data 09-23.zip",
+      "destination_relative": "data/raw/supplementary_season_stats_2009_2023.zip",
+      "bytes": 486569,
+      "sha256": "c519b02a85ce9278a6d1295b9818fd11afdc9c66d4b147772f6f3ae662fd500d",
+      "purpose": "Supplementary per-game season averages and player identifiers; not used in course code"
+    },
+    {
+      "source_relative": "final proj/nba.ipynb",
+      "destination_relative": "notebooks/legacy/nba_course_final.ipynb",
+      "bytes": 750206,
+      "sha256": "651fa5951b5b54f38234ad271e0507591276bfe4ca1ec66818436a39fe973d98",
+      "purpose": "Final course notebook with saved outputs"
+    },
+    {
+      "source_relative": "nba.ipynb",
+      "destination_relative": "notebooks/legacy/nba_course_early.ipynb",
+      "bytes": 659182,
+      "sha256": "73d0a1d465c8d455d78061691b2089f897b99fd151dad187a82bb999144d72a3",
+      "purpose": "Earlier notebook for comparison and provenance"
+    },
+    {
+      "source_relative": "final proj/nba.py",
+      "destination_relative": "src/legacy/nba_course.py",
+      "bytes": 16533,
+      "sha256": "cd9adb91d2f9d663b40443349b283215574139d036111bf1577a303abce62105",
+      "purpose": "Course script export"
+    },
+    {
+      "source_relative": "NBA_Final_Report_RitaFu.docx",
+      "destination_relative": "docs/legacy/NBA_Final_Report_RitaFu.docx",
+      "bytes": 373394,
+      "sha256": "84c008fd79342cdc58c43ad370b59fc8909520a825d4c135b100fdea7e4182dd",
+      "purpose": "Original report retained locally"
+    },
+    {
+      "source_relative": "final proj/final_presentation_RitaFu.pptx",
+      "destination_relative": "docs/legacy/final_presentation_RitaFu.pptx",
+      "bytes": 6522550,
+      "sha256": "c09a3dc3e584a51f51bcf233f8565ae178de42210a1f9bd416b2af3592d0e508",
+      "purpose": "Original slides retained locally"
+    }
+  ]
+}

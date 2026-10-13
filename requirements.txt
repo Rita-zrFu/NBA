@@ -1,0 +1,9 @@
+# Imports observed in the original course code. Original versions were not recorded.
+# These are unpinned declarations, not a verified reproducible environment.
+# No packages are installed and no new models are trained in Stage 1.
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+jupyterlab

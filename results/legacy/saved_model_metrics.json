@@ -1,0 +1,44 @@
+{
+  "provenance": "Saved output in final course notebook, cell 11; model was not rerun in Stage 1.",
+  "evaluation_status": "Historical course result; unsuitable as a prospective portfolio benchmark.",
+  "model": "LogisticRegression(max_iter=2000)",
+  "features": [
+    "Age",
+    "MP",
+    "G",
+    "GS",
+    "PTS",
+    "FGA",
+    "TRB",
+    "STL",
+    "BLK",
+    "PF",
+    "TOV"
+  ],
+  "observations": 12711,
+  "positives": 6978,
+  "negatives": 5733,
+  "positive_fraction": 0.5489733301864527,
+  "distinct_player_years": 10103,
+  "train_rows": 8897,
+  "test_rows": 3814,
+  "split": "Random stratified 70/30 split with random_state=42",
+  "roc_auc": 0.5362580795628706,
+  "rounded_classification_report": {
+    "accuracy": 0.553,
+    "positive_precision": 0.558,
+    "positive_recall": 0.895,
+    "positive_f1": 0.688,
+    "negative_precision": 0.519,
+    "negative_recall": 0.138,
+    "negative_f1": 0.218
+  },
+  "pr_auc": null,
+  "preinjury_analysis": {
+    "eligible_records": 319,
+    "sample_limit": 500,
+    "delta_minutes": -1.459707,
+    "delta_fg_pct": -0.013818,
+    "delta_points": -0.869537
+  }
+}
