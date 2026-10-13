@@ -1,0 +1,9 @@
+# Tested baseline environment: Python 3.13.5 (existing Anaconda base).
+# Install in a local environment; do not replace base packages.
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.15.3
+scikit-learn==1.6.1
+matplotlib==3.10.0
+xgboost==3.4.1
+lightgbm==4.7.0
